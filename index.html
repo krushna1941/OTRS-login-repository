@@ -1,0 +1,10 @@
+{% for message in messages %}
+Message: {{ message }} ×
+{% endfor %}
+Welcome to GeeksForGeeks!
+{% if user.is_authenticated %}
+Hello {{fname}}!
+You're successfully logged in.
+SignOut {% else %} SignUp
+
+SignIn {% endif %}
